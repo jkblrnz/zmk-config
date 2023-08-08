@@ -14,7 +14,7 @@
 
 / {
 
-        behaviours {
+        behaviors {
                 bhm: "balanced-homerow-mods" {
                 comptiable = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS";
