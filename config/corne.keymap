@@ -24,7 +24,7 @@
 //               |  TAB  |  LWR/ESC | SPC |   | ENT | RSE/BKSP  |  GUI  |
                         bindings = <
    &none &kp Q   &kp W       &kp E      &kp R       &kp T /**/ &kp Y   &kp U       &kp I         &kp O       &kp P    &none
-   &none &kp A   &ht_bl LCTRL S &ht_bl LALT D &ht_bl LSHFT F &kp G /**/ &kp H   &ht_bl RSHFT J &ht_bl RALT K    &ht_bl RCTRL L &Kp SEMI &none
+   &none &kp A   &ht_bl LCTRL S &ht_bl LALT D &ht_bl LSHFT F &kp G /**/ &kp H   &ht_bl RSHFT J &ht_bl RALT K    &ht_bl RCTRL L &kp SEMI &none
    &none &kp Z   &kp X       &kp C      &kp V       &kp B /**/ &kp N   &kp M       &kp COMMA     &kp DOT     &kp FSLH &none
    &kp TAB &lt 1 ESC   &kp SPACE                    /**/ &kp RET &lt 2 BSPC  &kp LGUI
                         >;
