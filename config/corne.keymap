@@ -32,43 +32,43 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-//   |  Q  |  W  |  E    |  R       | T   |   | Y   | U         |  I    |  O  |  P  |
-//   |  A  |  S  |  D    |  F       | G   |   | H   | J         |  K    |  L  |  ;  |
-//   |  Z  |  X  |  C    |  V       | B   |   | N   | M         |  ,    |  .  |  /  |
-//               |  TAB  |  LWR/ESC | SPC |   | ENT | RSE/BKSP  |  GUI  |
+//   |  -  |  U  |  ,    |  C       | Z   |   | Q   | G         |  Y    |  H  |  B  |
+//   |  O  |  I  |  A    |  N       | M   |   | D   | T         |  S    |  L  |  R  |
+//   |  /  |  ;  |  .    |  W       | V   |   | J   | P         |  F    |  K  |  X  |
+//               |  RET  |  RSE/E   | RPT |   | RPT | LWR/SPC   |  BKSP |
                         bindings = <
-   &none &kp Q &kp W        &kp E       &kp R        &kp T /**/ &kp Y   &kp U        &kp I       &kp O        &kp P    &none
-   &none &kp A &hm LCTRL S  &hm LALT D  &hm LSHFT F  &kp G /**/ &kp H   &hm RSHFT J  &hm RALT K  &hm RCTRL L  &kp SEMI &none
-   &none &kp Z &kp X        &kp C       &kp V        &kp B /**/ &kp N   &kp M        &kp COMMA   &kp DOT      &kp FSLH &none
-   &kp TAB     &lt 1 ESC    &kp SPACE                      /**/ &kp RET &lt 2 BSPC   &kp LGUI
+   &none &kp MINUS &kp U       &kp COMMA  &kp C       &kp Z /**/ &kp Q &kp G       &kp Y      &kp H       &kp B &none
+   &none &kp O     &hm LCTRL I &hm LALT A &hm LSHFT N &kp M /**/ &kp D &hm RSHFT T &hm RALT S &hm RCTRL L &kp R &none
+   &none &kp FSLH  &kp SEMI    &kp DOT    &kp W       &kp V /**/ &kp J &kp P       &kp F      &kp K       &kp X &none
+         &kp RET   &lt 2 E     &kp &key_repeat              /**/ &kp &key_repeat   &lt 1 SPC  &kp BSPC
                         >;
                 };
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  1  |  2  |  3  |  4  |  5    |   |  6  |  7   | 8   |  9  |  0   |
-// | F11 | F12 | BT1 | BT2 | BTCLR |   | LFT | DWN  | UP  | RGT |      |
-// | F1  | F2  | F3  | F4  | F5    |   | F6  | F7   | F8  | F9  |  F10 |
-//             |     |     |       |   |     |      |     |
+// | ! | @ | # |  $  |  %  |   | ^   |  &   |  *  |  (   |  )  |
+// | ` | [ | ' |  ]  |  \  |   | LFT |  DWN |  UP |  RGT | TAB |
+// | ~ | { | " |  }  |  |  |   | =   |  _   |     |      |     |
+//         | - | GUI |  +  |   |     |      |     |
                         bindings = <
-   &none  &kp N1  &kp N2  &kp N3       &kp N4       &kp N5     /**/ &kp N6   &kp N7   &kp N8   &kp N9    &kp N0  &none
-   &none  &kp F11 &kp F12 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR /**/ &kp LEFT &kp DOWN &kp UP   &kp RIGHT &trans  &none
-   &none  &kp F1  &kp F2  &kp F3       &kp F4       &kp F5     /**/ &kp F6   &kp F7   &kp F8   &kp F9    &kp F10 &none
-   &trans &trans  &trans                                       /**/ &kp SPC  &kp RET  &kp TAB
+   &none     &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT /**/ &kp CARET &kp AMPS  &kp KP_MULTIPLE  &kp LPAR  &kp RPAR &none
+   &none     &kp GRAVE &kp LBKT &kp SQT  &kp RBKT &kp BSLH  /**/ &kp LEFT  &kp DOWN  &kp UP           &kp RIGHT &kp TAB  &none
+   &none     &kp TILDE &kp LBRC &kp APOS &kp RBRC &kp PIPE  /**/ &kp EQUAL &kp UNDER &none            &none     &none    &none
+   &kp MINUS &kp GUI   &kp PLUS                             /**/ &none     &none     &none
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |   )  |
-// |     |     |     |  '  |  `  |   |  -  |  =  |  [  |  ]  |   \  |
-// |     |     |     |  "  |  ~  |   |  _  |  +  |  {  |  }  |  "|" |
-//             |     |     |     |   |     |     |     |
+// |  F1  |  F2  |  F3  |  F4  | F5    |   |  *  |  7  |  8  |  9  |  + |
+// |  F6  |  F7  |  F8  |  F9  | F10   |   |  /  |  4  |  5  |  6  |  - |
+// |  F11 |  F12 |  BT1 |  BT2 | BTCLR |   |  0  |  1  |  2  |  3  |  ^ |
+//               |      |      |       |   |     |     |     |
                         bindings = <
-   &none   &kp EXCL &kp AT  &kp HASH &kp DLLR &kp PRCNT /**/ &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &none
-   &none   &trans   &trans  &trans   &kp SQT  &kp GRAVE /**/ &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &none
-   &none   &trans   &trans  &trans   &kp DQT  &kp TILDE /**/ &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &none
-   &kp TAB &kp RET  &kp SPC                             /**/ &trans    &trans    &trans
+   &none     &kp F1  &kp F2  &kp F3       &kp F4       &kp F5     /**/ &kp STAR &kp 7 &kp 8 &kp 9 &kp PLUS  &none
+   &none     &kp F6  &kp F7  &kp F8       &kp F9       &kp F10    /**/ &kp FSLH &kp 4 &kp 5 &kp 6 &kp MINUS &none
+   &none     &kp F11 &kp F12 &kp BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR /**/ &kp 0    &kp 1 &kp 2 &kp 3 &kp RET   &none
+   &none     &none   &none                                        /**/ &trans   &trans    &trans
                         >;
                 };
         };
