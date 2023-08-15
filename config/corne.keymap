@@ -40,7 +40,7 @@
    &none &kp MINUS &kp U       &kp COMMA  &kp C       &kp Z /**/ &kp Q &kp G       &kp Y      &kp H       &kp B &none
    &none &kp O     &hm LCTRL I &hm LALT A &hm LSHFT N &kp M /**/ &kp D &hm RSHFT T &hm RALT S &hm RCTRL L &kp R &none
    &none &kp FSLH  &kp SEMI    &kp DOT    &kp W       &kp V /**/ &kp J &kp P       &kp F      &kp K       &kp X &none
-         &kp RET   &lt 2 E     &kp &key_repeat              /**/ &kp &key_repeat   &lt 1 SPC  &kp BSPC
+         &kp RET   &lt 2 E     &key_repeat                  /**/ &key_repeat   &lt 1 SPC  &kp BSPC
                         >;
                 };
 
@@ -72,4 +72,5 @@
                         >;
                 };
         };
+
 };
